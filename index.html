@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learn Control Systems, Robotics & DSA Visually</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0.2rem 0;
+      font-size: 1.5rem;
+    }
+
+    p.subtitle {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      padding: 0 1rem 2rem;
+    }
+
+    h2 {
+      margin-top: 1.8rem;
+      font-size: 1.15rem;
+      border-left: 4px solid #0b3c5d;
+      padding-left: 0.5rem;
+    }
+
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 0.8rem;
+    }
+
+    .tool-btn {
+      flex: 1 1 260px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: none;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .tool-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .tool-content {
+      padding: 0.9rem 1rem;
+    }
+
+    .tool-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    .tool-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: #e6edf3;
+      color: #0b3c5d;
+      margin-bottom: 0.4rem;
+    }
+
+    .tool-desc {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1rem 0 1.4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learn Control Systems, Robotics & DSA Visually</h1>
+    <p class="subtitle">Click a button to open the corresponding interactive tool.</p>
+  </header>
+
+  <main>
+    <p>
+      These browser-based tools let you tune controllers, move robots, and trace data
+      structures step by step. Use them for intuition building, exam prep, or just for fun.
+    </p>
+
+    <!-- Control Systems -->
+    <h2>Control Systems – Visuals & Games</h2>
+    <div class="button-grid">
+      <!-- 1) PID Playground -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunControlSystemsByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Control</div>
+          <div class="tool-title">PID Playground – Drone, Servo & Line Follower</div>
+          <p class="tool-desc">
+            Adjust Kp, Ki, Kd and watch drone altitude, servo angle, and a line follower respond in real time.
+          </p>
+        </div>
+      </a>
+
+      <!-- 2) Damping & Natural Frequency Explorer -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunControlSystems2ByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Control</div>
+          <div class="tool-title">Damping & Natural Frequency Explorer</div>
+          <p class="tool-desc">
+            Mass–spring–damper animation. Change ζ and ωₙ and see underdamped, critical and overdamped motion.
+          </p>
+        </div>
+      </a>
+
+      <!-- 3) Overshoot, riseTime, settlingTime Visualizer -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunControlSystems3ByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Control</div>
+          <div class="tool-title">Overshoot, Rise Time & Settling Time Visualizer</div>
+          <p class="tool-desc">
+            Unit step response with automatic Mp, Trise and Tsettle calculation. Great just before exams.
+          </p>
+        </div>
+      </a>
+
+      <!-- 4) Control Game 1 – Keep the Robot on the Line -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunControlGameByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Game</div>
+          <div class="tool-title">Control Game 1 – Keep the Robot on the Line</div>
+          <p class="tool-desc">
+            Learn what setpoint and error mean by keeping a robot on its reference path.
+          </p>
+        </div>
+      </a>
+
+      <!-- 5) Control Game 2 – Setpoint Chase -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunControlGameSetPointByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Game</div>
+          <div class="tool-title">Control Game 2 – Setpoint Chase</div>
+          <p class="tool-desc">
+            A cart follows a moving setpoint (0 → 1 → −0.5 → 0.5). Score depends on average |error|.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Robotics -->
+    <h2>Robotics Visualizers</h2>
+    <div class="button-grid">
+      <!-- 6) Forward & Inverse Kinematics Playground -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunForward-InverseKinematicsByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Robotics</div>
+          <div class="tool-title">Forward & Inverse Kinematics Playground</div>
+          <p class="tool-desc">
+            Play with DH parameters and joint angles. See FK (angles → pose) and IK (pose → angles).
+          </p>
+        </div>
+      </a>
+
+      <!-- 7) Global Path Planner Visualizer -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunGlobalPathPlannerByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Robotics</div>
+          <div class="tool-title">Global Path Planner Visualizer</div>
+          <p class="tool-desc">
+            Watch a mobile robot plan paths around obstacles using different global planners.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- DSA -->
+    <h2>DSA – Linked Lists & Recursion</h2>
+    <div class="button-grid">
+      <!-- 8) Recursive Linked List Visualizer -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunLinkedListByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">DSA</div>
+          <div class="tool-title">Recursive Linked List Visualizer (Insert & Delete)</div>
+          <p class="tool-desc">
+            C++ linked list with recursive insert and delete from end. See pointers and nodes update step by step.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Extra logic games -->
+    <h2>Additional Fun Logic Games</h2>
+    <div class="button-grid">
+      <!-- Coding Game -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunCodingGameByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Game</div>
+          <div class="tool-title">Logic & Coding Game</div>
+          <p class="tool-desc">
+            A fun logic-based coding game to practice reasoning and basic programming ideas.
+          </p>
+        </div>
+      </a>
+
+      <!-- Robotics Coding Game -->
+      <a class="tool-btn" href="https://hamzapid.github.io/FunRoboticsCodingGameByHamza/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-content">
+          <div class="tool-tag">Game</div>
+          <div class="tool-title">Robotics Coding Game</div>
+          <p class="tool-desc">
+            Logic puzzles with a robotics flavor to build problem-solving intuition.
+          </p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    These tools are shared only for learning and academic use, to help students build intuition
+    in control systems, robotics, and DSA. No commercial or political agenda is attached.
+  </footer>
+</body>
+</html>
